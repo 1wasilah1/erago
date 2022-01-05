@@ -9,7 +9,6 @@ import (
 	"github.com/gorilla/mux"
 )
 
-
 func GetAllProduct(w http.ResponseWriter, r *http.Request) {
 	var product []entity.Product
 	database.Connector.Find(&product)
